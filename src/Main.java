@@ -13,10 +13,12 @@ public class Main {
     private static final TaskService taskService = new TaskService(taskRepository);
 
         public static void main(String[] args){
-            populateTestData();
+//            populateTestData();
+//test
             new Engine(taskService).start();
         }
-        private static void populateTestData() {
+/*
+            private static void populateTestData() {
             taskService.addTask("n1", "s1", TaskType.PERSONAL,
                     LocalDateTime.of(2022, 5, 10, 15, 30),
                     new WeeklyRepeatable());
@@ -30,4 +32,5 @@ public class Main {
                     LocalDateTime.of(2022, 5, 16, 13, 30),
                     new OnceTaskRepeater());
         }
+ */
 }
